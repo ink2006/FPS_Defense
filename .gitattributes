@@ -1,0 +1,2 @@
+FPS_Defense/Library/SourceAssetDB filter=lfs diff=lfs merge=lfs -text
+FPS_Defense/Library/PackageCache/com.unity.collab-proxy@1.7.1/Lib/Editor/PlasticSCM/unityplastic.dll filter=lfs diff=lfs merge=lfs -text
