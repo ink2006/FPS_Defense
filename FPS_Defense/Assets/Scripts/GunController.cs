@@ -47,7 +47,7 @@ public class GunController : MonoBehaviour
         }
     }
 
-    private void Fire()
+    private void Fire() // 발사전
     {
         if (!isReload)
         {
@@ -63,12 +63,15 @@ public class GunController : MonoBehaviour
         }
     }
 
-    private void Shoot()
+    private void Shoot() // 발사후
     {
         currentGun.currentBulletCount--;
         currentFireRate = currentGun.fireRate; // 연사 속도 재계산.
+
         PlaySE(currentGun.fire_Sound);
-        currentGun.muzzleFlash.Play();
+
+        currentGun.muzzleFlash.Play(); 
+
         StopAllCoroutines();
         StartCoroutine(RetroActionCoroutine());
 
