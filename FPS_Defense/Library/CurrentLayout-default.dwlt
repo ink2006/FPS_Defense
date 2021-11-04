@@ -121,10 +121,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 911, y: 442}
-  m_MaxSize: {x: 22006, y: 10021}
+  m_MinSize: {x: 909, y: 442}
+  m_MaxSize: {x: 22004, y: 10021}
   vertical: 0
-  controlID: 3453
+  controlID: 4358
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -149,7 +149,7 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 442}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 3454
+  controlID: 4359
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -407,9 +407,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.63225955, y: 1.4960504, z: 3.0112894}
+    m_Target: {x: 960, y: 540, z: 0}
     speed: 2
-    m_Value: {x: -0.63225955, y: 1.4960504, z: 3.0112894}
+    m_Value: {x: 960, y: 540, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -456,13 +456,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.3259925, y: -0.45310995, z: 0.18240106, w: -0.8094887}
+    m_Target: {x: -0.09015474, y: -0.030153574, z: 0.0026565273, w: -0.9955297}
     speed: 2
-    m_Value: {x: 0.3259925, y: 0.45310995, z: -0.18240108, w: 0.8094887}
+    m_Value: {x: -0.09015474, y: -0.030153574, z: 0.0026565273, w: -0.9955297}
   m_Size:
-    m_Target: 0.286017
+    m_Target: 128.3948
     speed: 2
-    m_Value: 0.286017
+    m_Value: 128.3948
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -626,7 +626,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -10372
+  m_LastSelectedObjectID: -3198
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -655,9 +655,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 7cd7ffff
-      m_LastClickedID: -10372
-      m_ExpandedIDs: 9cf9ffff52fbffffae3c0000183d0000223d0000363d00005a3d0000863d0000943d0000e23d0000123e0000263e0000403e0000
+      m_SelectedIDs: 82f3ffff
+      m_LastClickedID: -3198
+      m_ExpandedIDs: 18f1ffff82f3ffff84f4ffff52fbffff1c3d0000163e0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -719,22 +719,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scripts/UI
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scripts/UI
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\gangu\OneDrive\Documents\FPS_Defense\FPS_Defense
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 82450000
-    m_LastClickedID: 17794
-    m_ExpandedIDs: 000000007c4500007e450000804500008245000000ca9a3b
+    m_SelectedIDs: c8450000
+    m_LastClickedID: 17864
+    m_ExpandedIDs: 00000000a4450000a6450000a8450000aa45000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -762,7 +762,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000007c4500007e450000804500008245000000ca9a3b
+    m_ExpandedIDs: 00000000a4450000a6450000a8450000aa45000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

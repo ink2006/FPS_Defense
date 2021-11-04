@@ -11,8 +11,7 @@ public class ItemEffect
     public int[] num; // 수치.
 }
 
-public class ItemEffectDatabase : MonoBehaviour
-{
+public class ItemEffectDatabase : MonoBehaviour {
 
     [SerializeField]
     private ItemEffect[] itemEffects;
@@ -22,9 +21,20 @@ public class ItemEffectDatabase : MonoBehaviour
     private StatusController thePlayerStatus;
     [SerializeField]
     private WeaponManager theWeaponManager;
-
+    [SerializeField]
+    private SlotToolTip theSlotToolTip;
 
     private const string HP = "HP", SP = "SP", DP = "DP", HUNGRY = "HUNGRY", THIRSTY = "THIRSTY", SATISFY = "SATISFY";
+
+    public void ShowToolTip(Item _item, Vector3 _pos)
+    {
+        theSlotToolTip.ShowToolTip(_item, _pos);
+    }
+
+    public void HideToolTip()
+    {
+        theSlotToolTip.HideToolTip();
+    }
 
     public void UseItem(Item _item)
     {
@@ -39,7 +49,7 @@ public class ItemEffectDatabase : MonoBehaviour
             for (int x = 0; x < itemEffects.Length; x++)
             {
 
-                if (itemEffects[x].itemName == _item.itemName)
+                if(itemEffects[x].itemName == _item.itemName)
                 {
 
                     for (int y = 0; y < itemEffects[x].part.Length; y++)
@@ -73,7 +83,7 @@ public class ItemEffectDatabase : MonoBehaviour
                     }
                     return;
                 }
-
+                
 
             }
             Debug.Log("ItemEffectDatabase에 일치하는 itemName 없습니다");
