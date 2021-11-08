@@ -2158,7 +2158,7 @@ GameObject:
   - component: {fileID: 789793354}
   - component: {fileID: 789793358}
   - component: {fileID: 789793359}
-  m_Layer: 2
+  m_Layer: 3
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
@@ -5587,6 +5587,7 @@ GameObject:
   - component: {fileID: 1709268468}
   - component: {fileID: 1709268467}
   - component: {fileID: 1709268466}
+  - component: {fileID: 1709268470}
   - component: {fileID: 1709268465}
   - component: {fileID: 1709268469}
   m_Layer: 0
@@ -5773,6 +5774,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1709268470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709268464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1be521d28a25af34f98a3c4db56d43ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  viewAngle: 130
+  viewDistance: 10
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!1001 &1712523633
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -132,7 +132,7 @@ public class Pig : MonoBehaviour
         applySpeed = walkSpeed;
         Debug.Log("°È±â");
     }
-    private void Run(Vector3 _targetPos)
+    public void Run(Vector3 _targetPos)
     {
         direction = Quaternion.LookRotation(transform.position - _targetPos).eulerAngles;
         currentTime = runTime;
