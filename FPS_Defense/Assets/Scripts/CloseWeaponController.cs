@@ -16,7 +16,8 @@ public abstract class CloseWeaponController : MonoBehaviour
     protected bool isSwing = false;
 
     protected RaycastHit hitInfo;
-
+    [SerializeField]
+    protected LayerMask layerMask;
 
     //필요한 컴포넌트
     private PlayerController thePlayerController;
@@ -77,7 +78,7 @@ public abstract class CloseWeaponController : MonoBehaviour
 
     protected bool CheckObject()
     {
-        if (Physics.Raycast(transform.position, transform.forward, out hitInfo, currentCloseWeapon.range))
+        if (Physics.Raycast(transform.position, transform.forward, out hitInfo, currentCloseWeapon.range, layerMask))
         {
             return true;
         }

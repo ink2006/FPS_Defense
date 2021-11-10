@@ -91,7 +91,7 @@ public class PlayerController : MonoBehaviour
     // ¾É±â ½Ãµµ
     private void TryCrouch()
     {
-        if (Input.GetKeyDown(KeyCode.LeftControl))
+        if (Input.GetKeyDown(KeyCode.C))
         {
             Crouch();
         }
