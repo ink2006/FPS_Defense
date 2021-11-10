@@ -194,7 +194,7 @@ public class PlayerController : MonoBehaviour
 
         isRun = true;
         theCrosshair.RunningAnimation(isRun);
-        theStatusController.DecreaseStamina(10);
+        theStatusController.DecreaseStamina(2);
         applySpeed = runSpeed;
     }
 
