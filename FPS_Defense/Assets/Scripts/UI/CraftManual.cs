@@ -92,6 +92,7 @@ public class CraftManual : MonoBehaviour
 
     public void SlotClick(int _slotNumber)
     {
+        GameManager.isOpenCraftManual = false; 
         go_Preview = Instantiate(craft_fire[_slotNumber].go_PreviewPrefab, tf_Player.position + tf_Player.forward, Quaternion.identity);
         go_Prefab = craft_fire[_slotNumber].go_Prefab;
         isPreviewActivated = true;
@@ -108,12 +109,14 @@ public class CraftManual : MonoBehaviour
 
     private void OpenWindow()
     {
+        GameManager.isOpenCraftManual = true;
         isActivated = true;
         go_BaseUI.SetActive(true);
     }
 
     private void CloseWindow()
     {
+        GameManager.isOpenCraftManual = false;
         isActivated = false;
         go_BaseUI.SetActive(false);
     }

@@ -45,11 +45,13 @@ public class Inventory : MonoBehaviour
 
     private void OpenInventory()
     {
+        GameManager.isOpenIventory = true;
         go_InventoryBase.SetActive(true);
     }
 
     private void CloseInventory()
     {
+        GameManager.isOpenIventory = false;
         go_InventoryBase.SetActive(false);
     }
 
