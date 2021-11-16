@@ -12,6 +12,9 @@ public class GameManager : MonoBehaviour
     public static bool isNight = false;
     public static bool isWater = false;
 
+    private WeaponManager theWM;
+    private bool flag = false;
+
     // Update is called once per frame
     void Update()
     {
@@ -28,6 +31,26 @@ public class GameManager : MonoBehaviour
             Cursor.visible = false;
             canPlayerMove = true;
         }
+
+
+        if (isWater)
+        {
+            if (!flag)
+            {
+                StopAllCoroutines();
+                StartCoroutine(theWM.WeaponInCoroutine());
+                flag = true;
+            }      
+        }
+
+        else
+        {
+            if(flag)
+            {
+                flag = false;
+                theWM.WeaponOut();
+            }
+        }
     }
 
 
@@ -35,5 +58,6 @@ public class GameManager : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        theWM = FindObjectOfType<WeaponManager>();
     }
 }
