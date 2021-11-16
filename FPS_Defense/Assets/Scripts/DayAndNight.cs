@@ -6,8 +6,6 @@ public class DayAndNight : MonoBehaviour
 {
     [SerializeField] private float secondPerRealTimeSecound; // 게임시간
 
-    private bool isNight = false;
-
     [SerializeField] private float fogDensityCalc; // fog증가율
 
     [SerializeField] private float nightFogDensity; // 밤 fog
@@ -27,11 +25,11 @@ public class DayAndNight : MonoBehaviour
 
         //밤이 되면
         if (transform.eulerAngles.x >= 170)
-            isNight = true;
+            GameManager.isNight = true;
         else if (transform.eulerAngles.x <= 10)
-            isNight = false;
+            GameManager.isNight = false;
 
-        if(isNight)
+        if(GameManager.isNight)
         {
             if(currentFogDensity <= nightFogDensity)
             {

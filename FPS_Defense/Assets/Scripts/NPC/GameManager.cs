@@ -9,6 +9,9 @@ public class GameManager : MonoBehaviour
     public static bool isOpenIventory = false;
     public static bool isOpenCraftManual = false;
 
+    public static bool isNight = false;
+    public static bool isWater = false;
+
     // Update is called once per frame
     void Update()
     {
