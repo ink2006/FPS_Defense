@@ -12,13 +12,15 @@ public class GameManager : MonoBehaviour
     public static bool isNight = false;
     public static bool isWater = false;
 
+    public static bool isPause = false;
+
     private WeaponManager theWM;
     private bool flag = false;
 
     // Update is called once per frame
     void Update()
     {
-        if (isOpenIventory || isOpenCraftManual)
+        if (isOpenIventory || isOpenCraftManual || isPause)
         {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;  
