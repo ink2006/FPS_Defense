@@ -5,4 +5,4 @@
  * **Unity3D**
 
 ## 게임 화면
- <img width="1080" height="720" src="C:\Users\gangu\OneDrive\Pictures\FPS_Defense\"></img>
+ <img width="1080" height="720" src="/Screenshot/image01.jpg"></img>
