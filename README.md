@@ -6,3 +6,5 @@
 
 ## 게임 화면
  <img width="900" height="600" src="/Screenshot/image01.jpg"></img>
+ <img width="900" height="600" src="/Screenshot/image02.jpg"></img>
+ <img width="900" height="600" src="/Screenshot/image03.jpg"></img>
