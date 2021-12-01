@@ -5,4 +5,4 @@
  * **Unity3D**
 
 ## 게임 화면
- <img width="350" height="700" src="/Image/image01"></img>
+ <img width="700" height="700" src="/사진/image01"></img>
